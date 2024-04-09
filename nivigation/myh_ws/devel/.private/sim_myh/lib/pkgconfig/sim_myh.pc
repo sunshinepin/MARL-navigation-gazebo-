@@ -1,0 +1,8 @@
+prefix=/home/xzh/MYHTD/nivigation/myh_ws/devel/.private/sim_myh
+
+Name: sim_myh
+Description: Description of sim_myh
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

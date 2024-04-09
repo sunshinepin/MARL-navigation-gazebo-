@@ -1,0 +1,8 @@
+prefix=/home/xzh/MYHTD/nivigation/myh_ws/install
+
+Name: gazebo_states_odom
+Description: Description of gazebo_states_odom
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

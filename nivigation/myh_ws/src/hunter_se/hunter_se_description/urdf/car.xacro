@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="hunter_se_with_box">
+    <xacro:include filename="$(find hunter_se_description)/urdf/hunter_se_description.xacro" />
+
+    <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+
+    <xacro:property name="tf_prefix" value="$(arg robot_namespace)/" />
+
+    <link name="box_link">
+        <inertial>
+            <origin xyz="-0.087983 0.019545 0.12035" rpy="0 0 0" />
+            <mass value="6.5899" />
+            <inertia ixx="0.038097" ixy="6.3863E-06" ixz="0.0023813" iyy="0.05534" iyz="0.00081482" izz="0.069781" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hunter_se_description/meshes/box_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hunter_se_description/meshes/box_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="box_joint" type="fixed">
+        <origin xyz="0.2 0.0 0.02" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="box_link"/>
+        <axis xyz="0.0 0.0 0.0"/>
+    </joint>
+
+    <!-- IMU Link -->
+    <xacro:arg name="imu_xyz" default="$(optenv HUSKY_IMU_XYZ 0.19 0 0.149)"/>
+    <xacro:arg name="imu_rpy" default="$(optenv HUSKY_IMU_RPY 0 -1.5708 3.1416)"/>
+    <xacro:arg name="imu_parent" default="$(optenv HUSKY_IMU_PARENT base_link)"/>
+
+    <link name="imu_link"/>
+    <joint name="imu_joint" type="fixed">
+        <origin xyz="$(arg imu_xyz)" rpy="$(arg imu_rpy)" />
+        <parent link="$(arg imu_parent)" />
+        <child link="imu_link" />
+    </joint>
+    <gazebo reference="imu_link"></gazebo>
+
+    <!-- Realsense Camera Primary and Secondary
+    <xacro:include filename="$(find hunter_se_description)/xacro/camera/camera.xacro"/>
+    <xacro:cam name="front_camera" parent="chassis" xyz="0.025 0 0.32" rpy="0 0 0" />
+
+    <xacro:include filename="$(find hunter_se_description)/xacro/camera/cameraD.xacro"/>
+    <xacro:camD name="cameraD" parent="chassis" xyz="0.025 0 0.32" rpy="0 0 0" /> -->
+
+    <!-- Included URDF/XACRO Files -->
+    <xacro:include filename="$(find hunter_se_description)/urdf/accessories/sensor_arch.urdf.xacro"/>
+
+    <xacro:property name="M_PI" value="3.14159"/>
+
+    <xacro:if value="$(arg sensor_arch)">
+        <xacro:sensor_arch prefix="" parent="box_link" size="$(arg sensor_arch_height)">
+            <origin xyz="$(arg sensor_arch_xyz)" rpy="$(arg sensor_arch_rpy)"/>
+        </xacro:sensor_arch>
+    </xacro:if>
+
+    <!-- Velodyne VLP-16 Laser Scanner -->
+    <xacro:VLP-16 parent="base_link" name="velodyne" topic="/velodyne_points" hz="10" samples="360" gpu="false" min_angle="-1.57" max_angle="1.57" min_range="0.1">
+      <origin xyz="0.125 0 0.25" rpy="0 0 0" />
+    </xacro:VLP-16>
+</robot>

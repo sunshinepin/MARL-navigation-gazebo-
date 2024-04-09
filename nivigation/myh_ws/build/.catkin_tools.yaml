@@ -1,0 +1,6 @@
+devel_space: /home/xzh/MYHTD/nivigation/myh_ws/devel
+install: false
+install_space: /home/xzh/MYHTD/nivigation/myh_ws/install
+profile: default
+source_space: /home/xzh/MYHTD/nivigation/myh_ws/src
+workspace: /home/xzh/MYHTD/nivigation/myh_ws

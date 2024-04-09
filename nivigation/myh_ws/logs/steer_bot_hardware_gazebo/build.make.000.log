@@ -1,0 +1,35 @@
+[35m[1mScanning dependencies of target steer_bot_hardware_gazebo[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/steer_bot_hardware_gazebo.dir/src/steer_bot_hardware_gazebo.cpp.o[0m
+[01m[K/home/xzh/MYHTD/nivigation/myh_ws/src/steer_bot_hardware_gazebo/src/steer_bot_hardware_gazebo.cpp:[m[K In member function ‘[01m[Kvoid steer_bot_hardware_gazebo::SteerBotHardwareGazebo::CleanUp()[m[K’:
+[01m[K/home/xzh/MYHTD/nivigation/myh_ws/src/steer_bot_hardware_gazebo/src/steer_bot_hardware_gazebo.cpp:267:31:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::empty() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’, declared with attribute nodiscard [[01;35m[K-Wunused-result[m[K]
+  267 |     [01;35m[Krear_wheel_jnt_name_.empty()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/9/array:39[m[K,
+                 from [01m[K/usr/include/c++/9/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/9/functional:54[m[K,
+                 from [01m[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/9/algorithm:71[m[K,
+                 from [01m[K/opt/ros/noetic/include/angles/angles.h:38[m[K,
+                 from [01m[K/home/xzh/MYHTD/nivigation/myh_ws/src/steer_bot_hardware_gazebo/src/steer_bot_hardware_gazebo.cpp:2[m[K:
+[01m[K/usr/include/c++/9/bits/basic_string.h:1035:7:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1035 |       [01;36m[Kempty[m[K() const _GLIBCXX_NOEXCEPT
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/xzh/MYHTD/nivigation/myh_ws/src/steer_bot_hardware_gazebo/src/steer_bot_hardware_gazebo.cpp:287:32:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::empty() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’, declared with attribute nodiscard [[01;35m[K-Wunused-result[m[K]
+  287 |     [01;35m[Kfront_steer_jnt_name_.empty()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/9/array:39[m[K,
+                 from [01m[K/usr/include/c++/9/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/9/functional:54[m[K,
+                 from [01m[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/9/algorithm:71[m[K,
+                 from [01m[K/opt/ros/noetic/include/angles/angles.h:38[m[K,
+                 from [01m[K/home/xzh/MYHTD/nivigation/myh_ws/src/steer_bot_hardware_gazebo/src/steer_bot_hardware_gazebo.cpp:2[m[K:
+[01m[K/usr/include/c++/9/bits/basic_string.h:1035:7:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1035 |       [01;36m[Kempty[m[K() const _GLIBCXX_NOEXCEPT
+      |       [01;36m[K^~~~~[m[K
+[100%] [32m[1mLinking CXX shared library /home/xzh/MYHTD/nivigation/myh_ws/devel/.private/steer_bot_hardware_gazebo/lib/libsteer_bot_hardware_gazebo.so[0m
+[100%] Built target steer_bot_hardware_gazebo

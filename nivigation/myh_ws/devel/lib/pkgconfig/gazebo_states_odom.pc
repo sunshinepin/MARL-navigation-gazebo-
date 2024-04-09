@@ -1,0 +1,1 @@
+/home/xzh/MYHTD/nivigation/myh_ws/devel/.private/gazebo_states_odom/lib/pkgconfig/gazebo_states_odom.pc

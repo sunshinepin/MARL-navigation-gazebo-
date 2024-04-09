@@ -1,0 +1,1 @@
+/home/xzh/MYHTD/nivigation/myh_ws/devel/.private/hunter_se_description/lib/pkgconfig/hunter_se_description.pc

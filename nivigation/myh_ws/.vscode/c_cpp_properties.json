@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/xzh/文档/myh_ws/src/gazebo_states_odom/include/**",
+        "/home/xzh/文档/myh_ws/src/livox_laser_simulation/include/**",
+        "/home/xzh/文档/myh_ws/src/steer_bot_hardware_gazebo/include/**",
+        "/home/xzh/文档/myh_ws/src/steer_drive_controller/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

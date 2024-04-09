@@ -1,0 +1,8 @@
+prefix=/home/xzh/MYHTD/nivigation/myh_ws/install
+
+Name: ht_obstacle_pub_makerarray
+Description: Description of ht_obstacle_pub_makerarray
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

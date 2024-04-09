@@ -1,0 +1,3 @@
+[ 33%] Built target steer_drive_controller_steerbot
+[ 50%] [32m[1mLinking CXX shared library /home/xzh/MYHTD/nivigation/myh_ws/devel/.private/steer_drive_controller/lib/libsteer_drive_controller.so[0m
+[100%] Built target steer_drive_controller

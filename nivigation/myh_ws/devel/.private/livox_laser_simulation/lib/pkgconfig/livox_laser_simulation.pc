@@ -1,0 +1,8 @@
+prefix=/home/xzh/MYHTD/nivigation/myh_ws/devel/.private/livox_laser_simulation
+
+Name: livox_laser_simulation
+Description: Description of livox_laser_simulation
+Version: 0.0.0
+Cflags: -I/home/xzh/MYHTD/nivigation/myh_ws/src/livox_laser_simulation/include
+Libs: -L${prefix}/lib -llivox_laser_simulation
+Requires: tf

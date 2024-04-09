@@ -1,0 +1,4 @@
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/share/gazebo_states_odom/cmake/gazebo_states_odomConfig.cmake
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/share/gazebo_states_odom/cmake/gazebo_states_odomConfig-version.cmake
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/lib/gazebo_states_odom/gazebo_odom_node
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/lib/pkgconfig/gazebo_states_odom.pc

@@ -1,0 +1,4 @@
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/share/steer_bot_hardware_gazebo/cmake/steer_bot_hardware_gazeboConfig.cmake
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/share/steer_bot_hardware_gazebo/cmake/steer_bot_hardware_gazeboConfig-version.cmake
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/lib/libsteer_bot_hardware_gazebo.so
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/lib/pkgconfig/steer_bot_hardware_gazebo.pc

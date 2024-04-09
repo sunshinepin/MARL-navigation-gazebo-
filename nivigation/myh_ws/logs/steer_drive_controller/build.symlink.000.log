@@ -1,0 +1,5 @@
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/share/steer_drive_controller/cmake/steer_drive_controllerConfig.cmake
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/share/steer_drive_controller/cmake/steer_drive_controllerConfig-version.cmake
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/lib/libsteer_drive_controller.so
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/lib/pkgconfig/steer_drive_controller.pc
+Symlinking /home/xzh/MYHTD/nivigation/myh_ws/devel/lib/steer_drive_controller/steer_drive_controller_steerbot
