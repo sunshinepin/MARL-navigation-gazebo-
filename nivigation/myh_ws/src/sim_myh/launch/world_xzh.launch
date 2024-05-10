@@ -5,7 +5,7 @@
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
 
-        <arg name="world_name" value="$(find sim_myh)/world/xzh.world"/> 
+        <arg name="world_name" value="$(find sim_myh)/world/ca1_test.world"/> 
         <arg name="gui" default="true"/>
 
   </include>

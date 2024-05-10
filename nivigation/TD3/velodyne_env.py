@@ -26,40 +26,27 @@ TIME_DELTA = 0.1
 def check_pos(x, y):
     goal_ok = True
 
-    if -2.3 > x > -3.7 and 4.7 > y > 3.3:
+
+    if 1.5 < x < 4.5 and 1.5 < y < 4.5:
         goal_ok = False
 
-    if -2.3 > x > -3.7 and -3.3 > y > -4.7:
+    if -5 < x < -0.5 and 4.5 > y > 1.5:
+        goal_ok = False
+    if -5.5 < x < -2.5 and 5 > y > 0.5:  
         goal_ok = False
 
-    if -8.3 > x > -9.7 and 4.7 > y > 3.3:
+    if 0.5 < x < 5 and -5.5 < y < -2.5:
+        goal_ok = False
+    if 2.5 < x < 5.5 and -5 < y < -0.5:  
         goal_ok = False
 
-    if -8.3 > x > -9.7 and -3.3 > y > -4.7:
+    if -4.5 < x < -2.5 and -4.5 < y < -1.5:
+        goal_ok = False
+    if -7.5 < x < -5.5 and 5.5 < y < 7.5:
         goal_ok = False
 
-    if 6.7 > x > 5.3 and 0.7 > y > -0.7:
-        goal_ok = False
-
-    if -5.3 > x > -6.7 and 0.7 > y > -0.7:
-        goal_ok = False
-
-    if 3.7 > x > 2.3 and 4.7 > y > 3.3:
-        goal_ok = False
-
-    if 3.7 > x > 2.3 and -3.3 > y > -4.7:
-        goal_ok = False
-
-    if 9.7 > x > 8.3 and 4.7 > y > 3.3:
-        goal_ok = False
-
-    if 9.7 > x > 8.3 and -3.3 > y > -4.7:
-        goal_ok = False
-
-    if 0.7 > x > -0.7 and 0.7 > y > -0.7:
-        goal_ok = False
-
-    if x > 13.0 or x < -13.0 or y > 7.0 or y < -7.0:
+    # 场景边界，增加每边1个单位
+    if x > 6.5 or x < -6.5 or y > 6.5 or y < -6.5:
         goal_ok = False
 
     return goal_ok
@@ -424,12 +411,19 @@ class GazeboEnv:
             return True, True, min_laser
         return False, False, min_laser
     # 奖励部分
+
     @staticmethod
     def get_reward(target, collision, action, min_laser):
         if target:
-            return 100.0
+            return 100.0  # 大奖励，表示成功到达目标
         elif collision:
-            return -100.0
+            # 根据距离障碍物的近似程度调整惩罚的大小
+            penalty = -100.0 * (0.35 / min_laser) if min_laser != 0 else -200.0
+            return penalty
         else:
+            # 考虑速度和旋转的影响，鼓励快速直行
             r3 = lambda x: 1 - x if x < 1 else 0.0
-            return action[0] / 2 - abs(action[1]) / 2 - r3(min_laser) / 2
+            speed_reward = action[0] / 2
+            rotation_penalty = abs(action[1]) / 2
+            proximity_penalty = r3(min_laser) / 2
+            return speed_reward - rotation_penalty - proximity_penalty

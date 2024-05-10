@@ -28,7 +28,8 @@ ackermann_steering_controller:
 
     # Transform from odom -> base_link
     enable_odom_tf: false
-    odom_frame_id: 'car1/ackermann_steering_controller/odom'
+    # odom_frame_id: 'car1/ackermann_steering_controller/odom'
+    odom_frame_id: 'car1/odom_gazebo'
 
     # Set to false if the motor driver provides velocity data. 
     estimate_velocity_from_position: true

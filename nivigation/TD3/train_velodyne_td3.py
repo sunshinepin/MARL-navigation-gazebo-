@@ -115,7 +115,7 @@ class TD3(object):
         replay_buffer,
         iterations,
         batch_size=100,
-        discount=1,
+        discount=0.9,
         tau=0.005,
         policy_noise=0.2,  # discount=0.99
         noise_clip=0.5,
@@ -219,7 +219,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  # cuda or
 seed = 0  # Random seed number
 eval_freq = 5e3  # After how many steps to perform the evaluation
 max_ep = 500  # maximum number of steps per episode
-eval_ep = 10  # number of episodes for evaluation
+eval_ep = 15  # number of episodes for evaluation
 max_timesteps = 5e6  # Maximum number of steps to perform
 expl_noise = 1  # Initial exploration noise starting value in range [expl_min ... 1]
 expl_decay_steps = (
@@ -230,12 +230,14 @@ batch_size = 40  # Size of the mini-batch
 discount = 0.99999  # Discount factor to calculate the discounted future reward (should be close to 1)
 tau = 0.005  # Soft target update variable (should be close to 0)
 policy_noise = 0.2  # Added noise for exploration
+# policy_noise = 0.4
 noise_clip = 0.5  # Maximum clamping values of the noise
+# noise_clip = 0.7  # Maximum clamping values of the noise
 policy_freq = 2  # Frequency of Actor network updates
 buffer_size = 1e6  # Maximum size of the buffer
 file_name = "TD3_velodyne"  # name of the file to store the policy
 save_model = True  # Weather to save the model or not
-load_model = False  # Weather to load a stored model
+load_model = True  # Weather to load a stored model
 random_near_obstacle = True  # To take random actions near obstacles or not
 
 # Create the network storage folders
