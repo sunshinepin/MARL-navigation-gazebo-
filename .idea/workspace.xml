@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3e46eac-2de6-4c5a-aef1-f022c8d82a7e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/hyper_parameters copy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/test_render copy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/utils_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch_models/5.13/5.13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch_models/5.13/excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/MADDPG/maddpg_env copy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/MADDPG/maddpg_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/MADDPG/maddpg_train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/MADDPG/replay_buffer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/MADDPG/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/TD3/pytorch_models/TD3_velodyne_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/TD3/pytorch_models/TD3_velodyne_actor.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/TD3/pytorch_models/TD3_velodyne_critic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/TD3/pytorch_models/TD3_velodyne_critic.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/TD3/results/TD3_velodyne.npy" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/TD3/results/TD3_velodyne.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/TD3/velodyne_env copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/TD3/velodyne_env copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/TD3/velodyne_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/TD3/velodyne_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/hyper_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/hyper_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/maddpg/maddpg.py" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/maddpg/maddpg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_0_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_0_actor.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_0_critic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_0_critic.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_0_target_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_0_target_actor.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_0_target_critic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_0_target_critic.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_1_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_1_actor.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_1_critic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_1_critic.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_1_target_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_1_target_actor.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_1_target_critic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/model/maddpg/agent_1_target_critic.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/test_render.py" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/test_render.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/train_for_mpe_spread.py" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/train_for_mpe_spread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/mpe_maddpg_result/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/.catkin_tools/profiles/default/devel_collisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/.catkin_tools/profiles/default/devel_collisions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/src/livox_ode_multiray_shape.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/src/livox_ode_multiray_shape.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/src/livox_points_plugin.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/build/livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/src/livox_points_plugin.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/logs/gazebo_states_odom/build.make.log" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/logs/gazebo_states_odom/build.make.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/logs/livox_laser_simulation/build.make.log" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/logs/livox_laser_simulation/build.make.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/logs/steer_drive_controller/build.make.log" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/logs/steer_drive_controller/build.make.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nivigation/myh_ws/src/sim_myh/rviz/car1.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/nivigation/myh_ws/src/sim_myh/rviz/car1.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_models/data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch_models/data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/Apr09_14-24-40_xzh-OMEN-by-HP-Desktop-873-0xxx/events.out.tfevents.1712643880.xzh-OMEN-by-HP-Desktop-873-0xxx.3130948.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/Apr09_22-08-15_xzh-OMEN-by-HP-Desktop-873-0xxx/events.out.tfevents.1712671695.xzh-OMEN-by-HP-Desktop-873-0xxx.370482.0" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2eo9UiT8Hq7S1vanKsp7Rjbhp88" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "xzh",
+    "last_opened_file_path": "/home/xzh/MYHTD/pytorch_models/5.13",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pytorch_models/5.13" />
+      <recent name="$PROJECT_DIR$/pytorch_models" />
+      <recent name="$PROJECT_DIR$/pytorch_models/4.8" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pytorch_models/4.12" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.excel (1)">
+    <configuration name="excel (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYHTD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch_models/5.13" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch_models/5.13/excel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYHTD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch_models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch_models/excel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="maddpg_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYHTD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nivigation/MADDPG" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nivigation/MADDPG/maddpg_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_velodyne_td3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYHTD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nivigation/TD3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nivigation/TD3/train_velodyne_td3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="velodyne_env" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYHTD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nivigation/TD3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nivigation/TD3/velodyne_env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.excel (1)" />
+        <item itemvalue="Python.train_velodyne_td3" />
+        <item itemvalue="Python.velodyne_env" />
+        <item itemvalue="Python.excel" />
+        <item itemvalue="Python.maddpg_train" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3e46eac-2de6-4c5a-aef1-f022c8d82a7e" name="Changes" comment="" />
+      <created>1712560080363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712560080363</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nivigation/TD3/velodyne_env.py</url>
+          <line>201</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nivigation/TD3/velodyne_env.py</url>
+          <line>199</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nivigation/TD3/velodyne_env.py</url>
+          <line>464</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
