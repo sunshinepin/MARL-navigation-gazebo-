@@ -139,6 +139,31 @@ class GazeboEnv:
     def odom_callback(self, od_data):
         self.last_odom = od_data
 
+    def compute_heading_error(goal_x, goal_y, odom_data):
+        # 从里程计数据提取位置和朝向
+        position_x = odom_data.pose.pose.position.x
+        position_y = odom_data.pose.pose.position.y
+        orientation_q = odom_data.pose.pose.orientation
+
+        # 四元数转欧拉角，获取当前朝向角度
+        quaternion = Quaternion(
+            orientation_q.w,
+            orientation_q.x,
+            orientation_q.y,
+            orientation_q.z
+        )
+        _, _, current_yaw = quaternion.to_euler(degrees=True)
+
+        # 计算目标向量与全局坐标系的夹角
+        angle_to_goal = math.degrees(math.atan2(goal_y - position_y, goal_x - position_x))
+
+        # 计算航向角误差
+        heading_error = angle_to_goal - current_yaw
+
+        # 角度归一化到 [-180, 180]
+        heading_error = (heading_error + 180) % 360 - 180
+
+        return heading_error
     def step(self, action):
         target = False
         # 发布机器人的动作，这里的step输入是action，action[0]是线速度，action[1]是角速度

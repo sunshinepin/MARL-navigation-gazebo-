@@ -18,7 +18,7 @@ from visualization_msgs.msg import Marker
 from visualization_msgs.msg import MarkerArray
 
 GOAL_REACHED_DIST = 0.7
-COLLISION_DIST = 0.35
+COLLISION_DIST = 0.4
 TIME_DELTA = 0.1
 
 
@@ -40,7 +40,7 @@ def check_pos(x, y):
     if 2.5 < x < 5.5 and -5 < y < -0.5:  
         goal_ok = False
 
-    if -4.5 < x < -2.5 and -4.5 < y < -1.5:
+    if -4.5 < x < -1.5 and -4.5 < y < -1.5:
         goal_ok = False
     if -7.5 < x < -5.5 and 5.5 < y < 7.5:
         goal_ok = False
@@ -126,6 +126,35 @@ class GazeboEnv:
     def odom_callback(self, od_data):
         self.last_odom = od_data
 
+    @staticmethod
+    def compute_heading_error(goal_x, goal_y, odom_data):
+        # 从里程计数据提取位置和朝向
+        # 从里程计信息中获取小车朝向
+        # Calculate robot heading from odometry data
+        position_x = odom_data.pose.pose.position.x
+        position_y = odom_data.pose.pose.position.y
+        orientation_q = odom_data.pose.pose.orientation
+
+        # 四元数转欧拉角，获取当前朝向角度
+        quaternion = Quaternion(
+            orientation_q.w,
+            orientation_q.x,
+            orientation_q.y,
+            orientation_q.z
+        )
+        _, _, current_yaw = quaternion.to_euler(degrees=True)
+
+        # 计算目标向量与全局坐标系的夹角
+        angle_to_goal = math.degrees(math.atan2(goal_y - position_y, goal_x - position_x))
+
+        # 计算航向角误差
+        heading_error = angle_to_goal - current_yaw
+
+        # 角度归一化到 [-180, 180]
+        heading_error = (heading_error + 180) % 360 - 180
+
+        return heading_error
+
     def step(self, action):
         target = False
         # 发布机器人的动作，这里的step输入是action，action[0]是线速度，action[1]是角速度
@@ -167,6 +196,9 @@ class GazeboEnv:
             self.last_odom.pose.pose.orientation.y,
             self.last_odom.pose.pose.orientation.z,
         )
+        # 计算航向角误差
+        heading_error = GazeboEnv.compute_heading_error(self.goal_x, self.goal_y, self.last_odom)
+
         euler = quaternion.to_euler(degrees=False)
         angle = round(euler[2], 4)
         # 计算到目标点的距离
@@ -195,6 +227,7 @@ class GazeboEnv:
             theta = -np.pi - theta
             theta = np.pi - theta
         # 判断是否到达了目标点
+            
         # Detect if the goal has been reached and give a large positive reward
         if distance < GOAL_REACHED_DIST:
             target = True
@@ -203,7 +236,7 @@ class GazeboEnv:
         robot_state = [distance, theta, action[0], action[1]]
         state = np.append(laser_state, robot_state)
         # 计算奖励  
-        reward = self.get_reward(target, collision, action, min_laser)
+        reward = self.get_reward(target, collision, action, min_laser,heading_error)
          # 返回状态、奖励、是否结束、是否到达目标点
         return state, reward, done, target
 
@@ -412,8 +445,9 @@ class GazeboEnv:
         return False, False, min_laser
     # 奖励部分
 
+
     @staticmethod
-    def get_reward(target, collision, action, min_laser):
+    def get_reward(target, collision, action, min_laser, heading_error):
         if target:
             return 100.0  # 大奖励，表示成功到达目标
         elif collision:
@@ -426,4 +460,9 @@ class GazeboEnv:
             speed_reward = action[0] / 2
             rotation_penalty = abs(action[1]) / 2
             proximity_penalty = r3(min_laser) / 2
-            return speed_reward - rotation_penalty - proximity_penalty
+
+            # 增加航向角误差奖励，角度误差越小，奖励越大
+            heading_reward = max(0, 1 - abs(heading_error) / 180)  # 假设heading_error的单位是度
+
+            return speed_reward - rotation_penalty - proximity_penalty + heading_reward
+

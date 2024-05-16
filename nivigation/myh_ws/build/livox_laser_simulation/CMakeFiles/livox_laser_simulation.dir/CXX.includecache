@@ -23,7 +23,7 @@ gazebo/util/system.hh
 -
 gazebo/ode/common.h
 -
-ignition/math4/ignition/math.hh
+ignition/math6/ignition/math.hh
 -
 
 /home/xzh/MYHTD/nivigation/myh_ws/src/livox_laser_simulation/include/livox_laser_simulation/livox_points_plugin.h
@@ -57,7 +57,7 @@ gazebo/physics/ode/ODEMultiRayShape.hh
 -
 livox_laser_simulation/livox_ode_multiray_shape.h
 /home/xzh/MYHTD/nivigation/myh_ws/src/livox_laser_simulation/src/livox_laser_simulation/livox_ode_multiray_shape.h
-ignition/math4/ignition/math.hh
+ignition/math6/ignition/math.hh
 -
 
 /home/xzh/MYHTD/nivigation/myh_ws/src/livox_laser_simulation/src/livox_points_plugin.cpp
